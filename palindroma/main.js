@@ -31,4 +31,9 @@ function confrontoParole(parola1, parola2) {
 }
 // do il risultato del controllo
 let risultato = confrontoParole(parolaOriginale, parolaInvertita);
-console.log("la tua parola è " + risultato);
+if (risultato == "palindroma") {
+    document.getElementById("result").innerHTML = "La tua parola è un palindromo";    
+} else {
+    document.getElementById("result").innerHTML = "La tua parola non è un palindromo";
+    
+}
