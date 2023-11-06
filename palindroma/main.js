@@ -1,22 +1,14 @@
 // faccio inserire una parola
 const parolaInserita = prompt("Inserisci una parola");
 
-
-// scompongo lettera per lettera la parola
-let arrayOriginale = [];
-for (let i = 0; i < parolaInserita.length; i++) {
-    letter = parolaInserita[i];
-    arrayOriginale.push(letter);
-}
-const parolaOriginale = arrayOriginale.toString();
-
 // inverto l'ordine delle lettere
 
-const lettereInvertite = arrayOriginale.toReversed();
-let parolaInvertita = lettereInvertite.toString();
+let parolaInvertita = "";
+for (let i = parolaInserita.length - 1; i >= 0; i--){
+    parolaInvertita += parolaInserita[i];
+}
 
-
-// controllo se le due parole sono uguali
+// Creo funzione per controllare se le due parole sono uguali
 
 function confrontoParole(parola1, parola2) {
     let risultato;
@@ -30,7 +22,7 @@ function confrontoParole(parola1, parola2) {
     return risultato;
 }
 // do il risultato del controllo
-let risultato = confrontoParole(parolaOriginale, parolaInvertita);
+let risultato = confrontoParole(parolaInserita, parolaInvertita);
 if (risultato == "palindroma") {
     document.getElementById("result").innerHTML = "La tua parola è un palindromo";    
 } else {
