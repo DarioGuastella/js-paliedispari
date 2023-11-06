@@ -24,14 +24,14 @@ console.log(`La somma dei numeri è ${somma}, quindi ${risultato}`);
 if (sceltaUtente !== "pari" && sceltaUtente !== "dispari") {
     console.log("Controlla di aver inserito correttamente i dati (pari o dispari)");
     
+} else if ( numeroUtente>5 || numeroUtente==0) {
+    console.log("Controlla di aver inserito correttamente i dati (numero compreso tra 1 e 5)");
+
 } else if (risultato == "pari" && sceltaUtente == "pari") {
     console.log("hai vinto");
 } else if (risultato == "dispari" && sceltaUtente == "dispari"){
     console.log("hai vinto");
-} else if (numeroUtente > 5){
-    console.log("Controlla di aver inserito correttamente i dati (numero compreso tra 1 e 5)");
-
-}else {
+}  else {
     console.log("hai perso");
 }
 
