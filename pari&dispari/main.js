@@ -21,7 +21,10 @@ function pariOrDispari(numero) {
 let risultato = pariOrDispari(somma);
 console.log(`La somma dei numeri è ${somma}, quindi ${risultato}`);
 
-if (risultato == "pari" && sceltaUtente == "pari") {
+if (sceltaUtente !== "pari" && sceltaUtente !== "dispari") {
+    console.log("Controlla di aver inserito correttamente i dati (pari o dispari)");
+    
+} else if (risultato == "pari" && sceltaUtente == "pari") {
     console.log("hai vinto");
 } else if (risultato == "dispari" && sceltaUtente == "dispari"){
     console.log("hai vinto");
