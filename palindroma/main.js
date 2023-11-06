@@ -21,7 +21,7 @@ function confrontoParole(parola1, parola2) {
     
     return risultato;
 }
-// do il risultato del controllo
+// Confronto e do il risultato del controllo
 let risultato = confrontoParole(parolaInserita, parolaInvertita);
 if (risultato == "palindroma") {
     document.getElementById("result").innerHTML = "La tua parola è un palindromo";    
